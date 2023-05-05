@@ -1,0 +1,27 @@
+
+@use "@/styles/_variable" as var;
+
+.wrapper {
+  display: flex;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.username {
+  color: var.$tertiary-color;
+  font-size: 0.8em;
+  padding-left: 0.5em;
+}
+
+.icon {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile {
+  padding-left: 1em;
+  margin-right: auto;
+}

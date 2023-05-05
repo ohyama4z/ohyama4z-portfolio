@@ -1,11 +1,20 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from '@/app/page.module.scss'
+
+import About from '@/components/About'
+import Works from '@/components/Works'
+import Header from '@/components/Header'
+import Skills from '@/components/Skills'
+
 
 export default function Home() {
   return (
-    <div>
-      <h1>ohyama4z portfolio</h1>
-      <Image src="/icon.jpg" width={200} height={200} className={styles.icon} alt='icon' />
-    </div>
+    <>
+      <Header />
+      <main className={styles.main}>
+        <About />
+        <Works />
+        <Skills />
+      </main>
+    </>
   )
 }

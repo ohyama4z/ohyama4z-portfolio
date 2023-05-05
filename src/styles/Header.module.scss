@@ -1,0 +1,27 @@
+@use "@/styles/_variable" as var;
+
+$padding-horizontal: 1em;
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+
+  display: flex;
+  justify-content: right;
+  height: var.$header-height;
+  background-color: var.$primary-color;
+}
+
+.title {
+  margin-right: auto;
+  padding: $padding-horizontal 1em $padding-horizontal 1em;
+  color: var.$secondary-color;
+}
+
+.navigation {
+  padding: $padding-horizontal 1em $padding-horizontal 1em;
+  color: var.$secondary-color;
+}
