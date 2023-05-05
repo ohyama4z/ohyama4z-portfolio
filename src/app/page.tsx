@@ -8,13 +8,13 @@ import Skills from '@/components/Skills'
 
 export default function Home() {
   return (
-    <>
+    <span className={styles.container}>
       <Header />
       <main className={styles.main}>
         <About />
         <Works />
         <Skills />
       </main>
-    </>
+    </span>
   )
 }
