@@ -1,0 +1,9 @@
+@use "@/styles/_variable.scss" as var;
+@use "@/styles/_mixin.scss" as m;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var.$background-color;
+}

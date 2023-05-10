@@ -12,7 +12,6 @@ export default function About() {
       <Image src="/icon.jpg" width={200} height={200} className={styles.icon} alt='icon' />
       <span className={styles.profile}>
         <h3>Takumi Ohyama<span className={styles.username}>ohyama4z</span></h3>
-
       </span>
       </div>
   </>

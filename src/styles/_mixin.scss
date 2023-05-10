@@ -1,0 +1,7 @@
+@use "@/styles/_variable.scss" as var;
+
+@mixin mq($bp) {
+  @media #{map-get(var.$breakpoint, $bp)} {
+    @content;
+  }
+}

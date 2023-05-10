@@ -1,10 +1,15 @@
-// $breakpoint: (
-//   sp: 'screen and (max-width: 767px)',
-//   tab: 'screen and (min-width: 768px) and (max-width: 1023px)',
-//   pc: 'screen and (min-width: 1024px)'
-// )
+$breakpoint: (
+  sp: 'screen and (max-width: 767px)',
+  tab: 'screen and (min-width: 768px) and (max-width: 1023px)',
+  pc: 'screen and (min-width: 1024px)'
+);
 
 $header-height: 3em;
-$primary-color: palevioletred;
-$secondary-color: white;
-$tertiary-color: gray;
+
+// color palette
+// https://paletton.com/#uid=1010u0kcduC3NPV7GEmhjpxmVjU
+$color-primary: #FBA5A2;
+$color-light-1: #FFC9C8;
+$color-light-2: #FFE6E5;
+$color-dark-1: #D36A68;
+$color-dark-2: #A63735;
