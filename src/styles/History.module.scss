@@ -1,0 +1,27 @@
+@use '@/styles/_variable.scss' as var;
+
+.container {
+  dl {
+    margin-top: 0;
+  }
+}
+
+.title {
+  margin-top: 1.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.item {
+  margin-top: 0.3em;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 0.9em;
+  color: var.$color-dark-1;
+}
+
+.description {
+  
+}

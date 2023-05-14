@@ -1,9 +1,9 @@
+@use "sass:math";
+@use "@/styles/_mixin" as m;
 @use "@/styles/_variable" as var;
 
-$padding-horizontal: 1em;
-
 .wrapper {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 999;
@@ -11,17 +11,28 @@ $padding-horizontal: 1em;
 
   display: flex;
   justify-content: right;
+  align-items: center;
   height: var.$header-height;
-  background-color: var.$primary-color;
+  background-color: var.$color-primary;
 }
 
 .title {
   margin-right: auto;
-  padding: $padding-horizontal 1em $padding-horizontal 1em;
-  color: var.$secondary-color;
+  padding: 1em;
+  font-size: 1.2em;
+  color: var.$color-text-white;
+  font-weight: bold;
 }
 
 .navigation {
-  padding: $padding-horizontal 1em $padding-horizontal 1em;
-  color: var.$secondary-color;
+  padding: 1em;
+  color: var.$color-text-white;
+  font-weight: bold;
+
+  // @include m.mq("tab") {
+  //   display: none;
+  // }
+  @include m.mq("sp") {
+    display: none;
+  }
 }

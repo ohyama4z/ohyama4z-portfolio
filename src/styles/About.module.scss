@@ -1,24 +1,50 @@
-
+@use "@/styles/_mixin" as m;
 @use "@/styles/_variable" as var;
+
+
 
 .wrapper {
   display: flex;
   margin-left: 1em;
   margin-right: 1em;
+
+  @include m.mq("sp") {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.username {
-  color: var.$tertiary-color;
-  font-size: 0.8em;
-  padding-left: 0.5em;
-}
-
-.icon {
+.image {
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 50%;
 }
 
+
+.real-name {
+  font-size: 1.3em;
+  font-weight: bold;
+
+}
+
+.handle-name {
+  color: var.$color-text-light;
+  font-weight: bold;
+  font-size: 1em;
+  padding-left: 0.5em;
+}
+
+
+.icon {
+  margin-left: 0.3em;
+  width: 1.7em;
+}
+
 .profile {
-  padding-left: 1em;
+  padding-left: 2em;
   margin-right: auto;
+  span {
+    display: inline-block;
+  }
 }

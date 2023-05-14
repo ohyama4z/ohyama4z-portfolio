@@ -2,18 +2,58 @@ import Image from 'next/image'
 import styles from '@/styles/About.module.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faS, faSchool } from '@fortawesome/free-solid-svg-icons'
+import { faTwitterSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+
+import History from '@/components/History'
 
 export default function About() {
   return (
   <>
-    <h2>About</h2>
+  <h2>About</h2>
     <div className={styles.wrapper}>
-      <Image src="/icon.jpg" width={200} height={200} className={styles.icon} alt='icon' />
-      <span className={styles.profile}>
-        <h3>Takumi Ohyama<span className={styles.username}>ohyama4z</span></h3>
-      </span>
+    <span className={styles.avatar}>
+      <Image
+        src="/icon.jpg"
+        width={200}
+        height={200}
+        className={styles.image}
+        sizes="100vw"
+        alt='ohyama4zアイコン'
+      />
+    </span>
+    <span className={styles.profile}>
+      <div>
+        <span className={styles["real-name"]}>Takumi Ohyama</span>
+        <span className={styles["handle-name"]}>ohyama4z</span>
+        <span>
+          <a
+            href="https://twitter.com/ohyama4z"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faTwitterSquare} 
+              className={styles.icon}
+              style={{ color: "#1DA1F2" }}
+            />
+          </a>
+          <a
+            href="https://github.com/ohyama4z"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <FontAwesomeIcon
+            icon={faGithubSquare}
+            className={styles.icon}
+            style={{ color: "#171515" }}
+          />
+          </a>
+        </span>
       </div>
+      <div><span>苫小牧工業高等専門学校 専攻科{' '}</span><span> 情報エレクトロニクス系 1年</span></div>
+      <History />
+    </span>
+    </div>
   </>
   )
 }

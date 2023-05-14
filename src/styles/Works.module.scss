@@ -1,0 +1,84 @@
+@use '@/styles/_variable.scss' as var;
+
+.wrapper {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20em;
+  min-height: 20em;
+  border-radius: 5%;
+  background-color: var.$color-secondary;
+  padding: 0.3em 1em 1em 1em;
+  margin-left: 2em;
+  text-align: center;
+
+  color: var.$color-text;
+
+  a {
+    text-decoration: none;
+    color : inherit
+  }
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  flex-grow:1;
+
+  height: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.tag-wrapper {
+  position: relative;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border: 2px solid var.$color-primary;
+  margin-right: 0.1em;
+  margin-bottom: 0.5em;
+  padding: 0.2em 0.5em;
+
+  margin-right: 1em;
+  border-radius: 1.4em;
+  font-weight: 500;
+  background-color: var.$color-secondary-light-1;
+}
+
+.github-icon {
+  width: 2em;
+  margin-right: 1em;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.7em;
+}
+
+.github-link-wrapper {
+  border-radius: 0.5em;
+  padding: 0.2em 0.5em;
+  display: flex;
+  align-items: center;
+  background-color: var.$color-light-1;
+}
+
+.description {
+  a {
+    white-space: nowrap;
+  }
+}

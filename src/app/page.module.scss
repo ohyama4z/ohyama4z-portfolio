@@ -1,4 +1,4 @@
-@use "@/styles/_variable" as var;
+@use "@/styles/_mixin.scss" as m;
 
 .container {
   display: flex;
@@ -10,5 +10,12 @@
 
 .main {
   width: 100%;
-  padding-top: 0.5em + var.$header-height;
+  max-width: 1024px;
+  @include m.mq("tab") {
+    width: 90%;
+  }
+
+  @include m.mq("sp") {
+    width: 90%;
+  }
 }

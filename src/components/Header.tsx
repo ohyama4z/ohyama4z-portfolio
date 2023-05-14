@@ -1,5 +1,6 @@
 import styles from '@/styles/Header.module.scss'
 
+// TODO:navから遷移するようにする
 export default function Header() {
   return (
     <header className={styles.wrapper}>
