@@ -2,12 +2,13 @@
 
 .wrapper {
   display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  height: 100%;
   width: 20em;
   min-height: 20em;
   border-radius: 5%;
@@ -15,6 +16,7 @@
   padding: 0.3em 1em 1em 1em;
   margin-left: 2em;
   text-align: center;
+  margin-bottom: 2em;
 
   color: var.$color-text;
 
