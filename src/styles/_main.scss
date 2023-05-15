@@ -1,10 +1,15 @@
 @use "@/styles/_variable.scss" as var;
 @use "@/styles/_mixin.scss" as m;
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   background-color: var.$color-background;
   color: var.$color-text;
+  scroll-margin-top: var.$header-height + 1em;
 }

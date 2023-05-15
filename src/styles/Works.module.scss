@@ -19,11 +19,6 @@
   margin-bottom: 2em;
 
   color: var.$color-text;
-
-  a {
-    text-decoration: none;
-    color : inherit
-  }
 }
 
 .title-wrapper {
@@ -69,6 +64,10 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 0.7em;
+  a {
+    text-decoration: none;
+    color : inherit
+  }
 }
 
 .github-link-wrapper {
@@ -77,6 +76,7 @@
   display: flex;
   align-items: center;
   background-color: var.$color-light-1;
+  box-shadow: 0.2em 0.2em var.$color-secondary-dark-1;
 }
 
 .description {

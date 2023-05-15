@@ -30,7 +30,7 @@ export default function History() {
         histories.map(({ date, description }) => (
         <div key={`${date}${description}`} className={styles.item}>
           <dt className={styles.date}>{date}</dt>
-          <dd className={styles.description}>{description}</dd>
+          <dd>{description}</dd>
         </div>))
       }
       </dl>

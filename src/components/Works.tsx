@@ -3,6 +3,8 @@ import styles from '@/styles/Works.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
+import Link from 'next/link'
+
 
 type Work = {
   title: string
@@ -21,7 +23,7 @@ const works: Work[] = [
   },
   {
     title: 'Kakomon-Management-System',
-    description: <>収集した過去問を管理するシステム。認証にNetlify Identifyを使用し、<a href="https://github.com/netlify/git-gateway" target="_blank" rel="noopener noreferrer">netlify/git-gateway</a>でファイルの編集・追加などを行っています。</>,
+    description: <>収集した過去問を管理するシステム。認証にNetlify Identifyを使用し、<Link href="https://github.com/netlify/git-gateway" target="_blank" rel="noopener noreferrer">netlify/git-gateway</Link>でファイルの編集・追加などを行っています。</>,
     github: 'https://github.com/ohyama4z/Kakomon-Management-System',
     tech: ['TypeScript', 'Netlify Identify','Vue', 'netlify/git-gateway']
   }
@@ -37,7 +39,7 @@ const workList = works.map((work) => {
       <h3 className={styles.title}>{work.title}</h3>
       
         <div className={styles["github-link"]}>
-          <a
+          <Link
             href={work.github}
             target="_blank"
             rel="noopener noreferrer"
@@ -46,7 +48,7 @@ const workList = works.map((work) => {
             <FontAwesomeIcon icon={faGithubSquare} className={styles["github-icon"]} style={{ color: "#171515" }} />
             <span>GitHubを開く</span>
           </span>
-          </a>
+          </Link>
         </div>
       <div className={styles.description}>{work.description}</div>
       <span className={styles["footer"]}>
@@ -59,7 +61,7 @@ const workList = works.map((work) => {
 export default function Works() {
   return (
     <>
-      <h2>Works</h2>
+      <h2 id="works">Works</h2>
       <div className={styles.wrapper}>
         {workList}
       </div>
