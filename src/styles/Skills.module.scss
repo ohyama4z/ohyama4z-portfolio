@@ -1,0 +1,26 @@
+@use "@/styles/_mixin.scss" as m;
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  @include m.mq("pc") {
+    span:nth-child(2) {
+      margin-left: 2em;
+    }
+  }
+
+  @include m.mq("tab") {
+    span:nth-child(2) {
+      margin-left: 2em;
+    }
+  }
+
+  @include m.mq("sp") {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+

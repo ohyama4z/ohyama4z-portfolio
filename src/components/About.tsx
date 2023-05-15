@@ -51,7 +51,7 @@ export default function About() {
           </Link>
         </span>
       </div>
-      <div><span>苫小牧工業高等専門学校 専攻科{' '}</span><span> 情報エレクトロニクス系 1年</span></div>
+      <div><span>苫小牧工業高等専門学校 専攻科</span> <span>情報エレクトロニクス系 1年</span></div>
       <History />
     </span>
   </div>

@@ -12,6 +12,7 @@
 .main {
   width: 100%;
   max-width: 1024px;
+  height: 10000px;
   @include m.mq("tab") {
     width: 90%;
   }
