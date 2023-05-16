@@ -1,13 +1,16 @@
 import localFont from 'next/font/local'
 import '@/styles/_main.scss'
 
-const localFontSansJP = localFont({
-  src: '../../public/NotoSansJP-VariableFont_wght.ttf',
+const localFontNoteSansJP = localFont({
+  src: '../fonts/NotoSansJP-VariableFont_wght.ttf',
   display: 'swap',
 })
 
 export const metadata = {
-  title: 'ohyama4z portfolio'
+  title: 'ohyama4z portfolio',
+  icons: {
+    icon: '/icon.jpg'
+  }
 }
 
 export default function RootLayout({
@@ -17,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={localFontSansJP.className}>{children}</body>
+      <body className={localFontNoteSansJP.className}>{children}</body>
     </html>
   )
 }
