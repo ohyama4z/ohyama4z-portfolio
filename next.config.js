@@ -3,8 +3,8 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  basePath: process.env.NODE_ENV === "production" ? "/" : "",
-  assetPrefix: process.env.NODE_ENV === "production" ? "/" : "",
+  basePath: "",
+  assetPrefix: "",
 }
 
 module.exports = nextConfig
