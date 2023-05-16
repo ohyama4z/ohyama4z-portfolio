@@ -1,7 +1,6 @@
 import styles from '@/styles/Skills.module.scss'
 
 import Link from 'next/link'
-import { Type } from 'typescript'
 
 type Skill = {
   type: "言語" | "フレームワーク" | "その他"
@@ -46,7 +45,7 @@ const skills: Skill[] = [
   },
   {
     type: "フレームワーク",
-    name: "Express",
+    name: "Express.js",
     description: <>個人開発でバックエンドを書くときによく使います。</>
   },
   {
@@ -71,10 +70,12 @@ const skills: Skill[] = [
   },
 ]
 
+// TODO: いい感じにdescriptionを表示したい
 const pickType = (type: Skill["type"]):JSX.Element[] => 
   skills.filter(skill => skill.type === type).map(({ name, description }) =>
     <li key={name}>
-      <span>{name}</span><span>{description}</span>
+      {/* <span>{name}</span><span>{description}</span> */}
+      {name}
     </li>
   )
 
@@ -95,7 +96,9 @@ export default function Skills() {
             <ul>
               {languages}
             </ul><br />
-          </ul>
+            </ul>
+        </span>
+        <span>
           <ul>
             <li>フレームワーク</li>
             <ul>

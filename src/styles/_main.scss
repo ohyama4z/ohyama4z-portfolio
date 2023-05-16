@@ -2,8 +2,7 @@
 @use "@/styles/_mixin.scss" as m;
 
 html {
-  scroll-behavior: smooth;
-  scroll-margin-top: var.$header-height+1em;
+  scroll-behavior: smooth!important;
 }
 
 html,

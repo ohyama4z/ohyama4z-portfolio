@@ -15,8 +15,8 @@ export default function About() {
     <span className={styles.avatar}>
       <Image
         src="/icon.jpg"
-        width={200}
-        height={200}
+        width={250}
+        height={250}
         className={styles.image}
         sizes="100vw"
         alt='ohyama4zアイコン'

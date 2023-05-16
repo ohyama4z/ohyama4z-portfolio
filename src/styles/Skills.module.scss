@@ -6,13 +6,13 @@
   margin: 0 auto;
 
   @include m.mq("pc") {
-    span:nth-child(2) {
+    span:not(:first-child) {
       margin-left: 2em;
     }
   }
 
   @include m.mq("tab") {
-    span:nth-child(2) {
+    span:not(:first-child) {
       margin-left: 2em;
     }
   }
