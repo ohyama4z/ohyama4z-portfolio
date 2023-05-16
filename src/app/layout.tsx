@@ -1,7 +1,10 @@
-import { Noto_Sans_JP } from 'next/font/google'
+import localFont from 'next/font/local'
 import '@/styles/_main.scss'
 
-const noteSansJP = Noto_Sans_JP({subsets: ['latin']})
+const localFontSansJP = localFont({
+  src: '../../public/NotoSansJP-VariableFont_wght.ttf',
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'ohyama4z portfolio'
@@ -14,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={noteSansJP.className}>{children}</body>
+      <body className={localFontSansJP.className}>{children}</body>
     </html>
   )
 }
